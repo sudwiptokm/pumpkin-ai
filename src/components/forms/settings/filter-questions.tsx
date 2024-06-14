@@ -45,7 +45,7 @@ const FilterQuestions = ({ id }: Props) => {
           <div className="flex flex-col gap-3">
             <Section
               label="Answer to question"
-              message="The anwer for the question above"
+              message="The answer for the question above"
             />
             <FormGenerator
               inputType="textarea"
