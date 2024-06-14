@@ -14,7 +14,7 @@ const DomainSettingsPage = async ({ params }: Props) => {
   if (!domain) redirect("/dashboard");
 
   return (
-    <>
+    <div className="pr-4 flex-1 flex-col flex h-screen">
       <InfoBar />
       <div className="overflow-y-auto w-full chat-window flex-1 h-0">
         <SettingsForm
@@ -29,7 +29,7 @@ const DomainSettingsPage = async ({ params }: Props) => {
           products={domain.domains[0].products || []}
         />
       </div>
-    </>
+    </div>
   );
 };
 
