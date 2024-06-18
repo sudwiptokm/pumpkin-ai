@@ -1,6 +1,7 @@
 import React from "react";
 import { FieldErrors, FieldValues, UseFormRegister } from "react-hook-form";
 import BookAppointmentDate from "./booking-date";
+import PaymentCheckout from "./product-checkout";
 import QuestionsForm from "./questions";
 
 type Props = {
@@ -81,17 +82,17 @@ const PortalSteps = ({
     );
   }
 
-  // if (step == 2 && type == 'Payment') {
-  //   return (
-  //     <PaymentCheckout
-  //       products={products}
-  //       stripeId={stripeId}
-  //       onBack={onBack}
-  //       onNext={onNext}
-  //       amount={amount}
-  //     />
-  //   )
-  // }
+  if (step == 2 && type == "Payment") {
+    return (
+      <PaymentCheckout
+        products={products}
+        stripeId={stripeId}
+        onBack={onBack}
+        onNext={onNext}
+        amount={amount}
+      />
+    );
+  }
 
   return (
     <div className="flex flex-col items-center gap-3">

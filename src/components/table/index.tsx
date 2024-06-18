@@ -15,7 +15,7 @@ type DataTableProps = {
 export const DataTable = ({ headers, children }: DataTableProps) => {
   return (
     <Table className="rounded-t-xl overflow-hidden">
-      <TableHeader>
+      <TableHeader className="bg-orange">
         <TableRow className="">
           {headers.map((header, key) => (
             <TableHead
