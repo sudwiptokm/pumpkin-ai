@@ -1,13 +1,15 @@
 type MenuLogoProps = {
   onClick(): void;
+  height?: number;
+  width?: number;
 };
 
-export const MenuLogo = ({ onClick }: MenuLogoProps) => {
+export const MenuLogo = ({ onClick, width, height }: MenuLogoProps) => {
   return (
     <svg
       onClick={onClick}
-      width="30"
-      height="30"
+      width={width ? width : "30"}
+      height={height ? height : "30"}
       viewBox="0 0 110 110"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

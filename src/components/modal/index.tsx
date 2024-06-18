@@ -9,6 +9,7 @@ import {
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import { MenuLogo } from "../../icons/menu-logo";
 
 type Props = {
   trigger: React.ReactNode;
@@ -34,12 +35,13 @@ const Modal = ({
           <DialogTrigger asChild>{trigger}</DialogTrigger>
           <DialogContent>
             <div className="flex justify-center gap-3">
-              <div className="w-12 h-12 relative">
-                <Image
+              <div className="w-12 h-12 relative ">
+                {/* <Image
                   src={`https://ucarecdn.com/2c9bd4ab-1f00-41df-bad2-df668f65a232/`}
                   fill
                   alt="Corinna"
-                />
+                /> */}
+                <MenuLogo onClick={() => {}} width={48} height={48} />
               </div>
               <div className="text-gray-400">
                 <ArrowLeft size={20} />
