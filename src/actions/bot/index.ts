@@ -162,7 +162,6 @@ export const onAiChatBotAssistant = async (
             author
           );
 
-          //   TODO: add this
           onRealTimeChat(
             checkCustomer.customer[0].chatRoom[0].id,
             message,

@@ -10,7 +10,6 @@ import { Card, CardContent, CardDescription } from "../ui/card";
 type Props = {};
 
 const BillingSettings = async (props: Props) => {
-  // TODO: Add stripe subscription form
   const plan = await onGetSubscriptionPlan();
   console.log({ plan });
   const planFeatures = pricingCards.find(
