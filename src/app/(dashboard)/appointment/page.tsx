@@ -28,8 +28,10 @@ const Page = async (props: Props) => {
   );
 
   return (
-    <div className="pr-5">
-      <InfoBar />
+    <>
+      <div className="pr-5">
+        <InfoBar />
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 flex-1 h-0 gap-5">
         <div className="lg:col-span-2 overflow-y-auto">
           <AllAppointments bookings={domainBookings?.bookings} />
@@ -81,7 +83,7 @@ const Page = async (props: Props) => {
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
