@@ -2,7 +2,7 @@ import { onGetSubscriptionPlan } from "@/actions/settings";
 import { pricingCards } from "@/constants/landing-page";
 import { CheckCircle2, Plus } from "lucide-react";
 import Image from "next/image";
-// import SubscriptionForm from "../forms/settings/subscription-form";
+import SubscriptionForm from "../forms/settings/subscription-form";
 import Modal from "../modal";
 import Section from "../section-label";
 import { Card, CardContent, CardDescription } from "../ui/card";
@@ -12,6 +12,7 @@ type Props = {};
 const BillingSettings = async (props: Props) => {
   // TODO: Add stripe subscription form
   const plan = await onGetSubscriptionPlan();
+  console.log({ plan });
   const planFeatures = pricingCards.find(
     (card) => card.title.toUpperCase() === plan?.toUpperCase()
   )?.features;
@@ -52,7 +53,7 @@ const BillingSettings = async (props: Props) => {
             )
           }
         >
-          {/* <SubscriptionForm plan={plan!} /> */}
+          <SubscriptionForm plan={plan!} />
           <></>
         </Modal>
       </div>

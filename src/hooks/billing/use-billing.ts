@@ -111,7 +111,7 @@ export const useSubscriptions = (plan: "STANDARD" | "PRO" | "ULTIMATE") => {
   const [payment, setPayment] = useState<"STANDARD" | "PRO" | "ULTIMATE">(plan);
   const { toast } = useToast();
   const router = useRouter();
-  const onUpdatetToFreTier = async () => {
+  const onUpdateToFreeTier = async () => {
     try {
       setLoading(true);
       const free = await onUpdateSubscription("STANDARD");
@@ -135,7 +135,7 @@ export const useSubscriptions = (plan: "STANDARD" | "PRO" | "ULTIMATE") => {
     loading,
     onSetPayment,
     payment,
-    onUpdatetToFreTier,
+    onUpdateToFreeTier,
   };
 };
 

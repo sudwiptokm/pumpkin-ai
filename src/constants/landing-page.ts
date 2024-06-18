@@ -1,7 +1,7 @@
 export const pricingCards = [
   {
     title: "Standard",
-    description: "Perfect for trying out Corinna AI",
+    description: "Perfect for trying out Pumpkin AI",
     price: "$0",
     duration: "",
     highlight: "Key features",
@@ -19,7 +19,7 @@ export const pricingCards = [
     priceId: "price_1OYxkqFj9oKEERu1KfJGWxgN",
   },
   {
-    title: "Plus",
+    title: "Pro",
     description: "For serious agency owners",
     price: "$67",
     duration: "month",
