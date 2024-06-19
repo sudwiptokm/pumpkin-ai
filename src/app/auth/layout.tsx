@@ -29,7 +29,7 @@ const Layout = async ({ children }: Props) => {
           Hi, I’m your AI powered sales assistant, Pumpkin!
         </h2>
         <p className="text-iridium md:text-sm mb-10">
-          Corinna is capable of capturing lead information without a form...{" "}
+          Pumpkin is capable of capturing lead information without a form...{" "}
           <br />
           something never done before 😉
         </p>
