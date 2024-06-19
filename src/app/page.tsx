@@ -1,9 +1,7 @@
 import clsx from "clsx";
-import parse from "html-react-parser";
 import { Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { onGetBlogPosts } from "../actions/landing";
 import NavBar from "../components/navbar";
 import { Button } from "../components/ui/button";
 import {
@@ -15,20 +13,19 @@ import {
   CardTitle,
 } from "../components/ui/card";
 import { pricingCards } from "../constants/landing-page";
-import { getMonthName } from "../lib/utils";
 
 type Props = {};
 
 const Page = async (props: Props) => {
-  const posts:
-    | {
-        title: string;
-        content: string;
-        id: string;
-        image: string;
-        createdAt: Date;
-      }[]
-    | undefined = await onGetBlogPosts();
+  // const posts:
+  //   | {
+  //       title: string;
+  //       content: string;
+  //       id: string;
+  //       image: string;
+  //       createdAt: Date;
+  //     }[]
+  //   | undefined = await onGetBlogPosts();
   return (
     <main>
       <NavBar />
@@ -107,7 +104,7 @@ const Page = async (props: Props) => {
         ))}
       </div>
 
-      <section className="flex justify-center items-center flex-col gap-4 mt-28">
+      {/* <section className="flex justify-center items-center flex-col gap-4 mt-28">
         <h2 className="text-4xl text-center">News Room</h2>
         <p className="text-muted-foreground text-center max-w-lg">
           Explore our insights on AI, technology, and optimizing your business.
@@ -136,7 +133,7 @@ const Page = async (props: Props) => {
               </Card>
             </Link>
           ))}
-      </section>
+      </section> */}
     </main>
   );
 };
