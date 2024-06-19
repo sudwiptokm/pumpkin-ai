@@ -27,7 +27,7 @@ const AllAppointments = ({ bookings }: Props) => {
     <DataTable headers={APPOINTMENT_TABLE_HEADER}>
       {bookings ? (
         bookings.map((booking) => (
-          <TableRow key={booking.id}>
+          <TableRow key={booking.id} className="bg-gray-50">
             <TableCell>{booking.email}</TableCell>
             <TableCell>
               <div>
