@@ -28,8 +28,13 @@ export const extractUUIDFromString = (url: string) => {
   );
 };
 
-export const extractURLfromString = (url: string) => {
-  return url.match(/https?:\/\/[^\s"<>]+/);
+// export const extractURLfromString = (url: string) => {
+//   return url.match(/https?:\/\/[^\s"<>]+/);
+// };
+
+export const extractURLfromString = (text: string) => {
+  const regex = /https?:\/\/[^)\]\}\s]+/i;
+  return text.match(regex);
 };
 
 export const extractEmailsFromString = (text: string) => {
