@@ -306,6 +306,7 @@ export const onAiChatBotAssistant = async (
           );
 
           if (generatedLink) {
+            console.log({ generatedLink });
             const link = generatedLink[0];
             const response = {
               role: "assistant",

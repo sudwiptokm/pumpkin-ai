@@ -33,7 +33,7 @@ export const extractUUIDFromString = (url: string) => {
 // };
 
 export const extractURLfromString = (text: string) => {
-  const regex = /https?:\/\/[^)\]\}\s]+/i;
+  const regex = /https?:\/\/[a-zA-Z0-9\-.:\/]+(?<!\.)/i;
   return text.match(regex);
 };
 
